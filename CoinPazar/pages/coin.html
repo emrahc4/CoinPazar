@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>CoinPazar</title>
+</head>
+
+<body>
+
+    <div class="overlay">
+        <button id="closeMenu"><i class="ri-close-circle-line"></i></button>
+
+        <div class="nav-links">
+            <a href="/index.html" class="active">Ana Sayfa</a>
+            <a href="/pages/charts.html">Grafikler</a>
+            <a href="/pages/search.html">Aramak</a>
+            <a href="/pages/about.html">Hakkımızda</a>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://github.com/emrahc4"><i class="ri-github-line"></i></a>
+            <a href="https://www.linkedin.com/in/emrah-%C3%A7ak%C4%B1r-052b422a1/" target="_blank"><i class="ri-linkedin-line"></i></a>
+        </div>
+
+    </div>
+
+    <div class="main">
+
+        <div class="global">
+            <p>Coins: <b id="coins-count">N/A</b></p>
+            <p>Değişimler: <b id="exchanges-count">N/A</b></p>
+            <p>Piyasa Değeri: <span><b id="marketCap">N/A</b> <span id="marketCapChange">N/A <i
+                            class="ri-arrow-down-s-fill"></i></span></span></p>
+            <p>24 Saatlik Hacim: <b id="volume">N/A</b></p>
+            <p>Piyasa Hakimiyeti: <b id="dominance">BTC N/A% - ETH N/A%</b></p>
+        </div>
+
+        <nav>
+            <div class="left-section">
+                <button id="openMenu"><i class="ri-menu-line"></i></button>
+                <a href="#" class="logo">CoinPazar</a>
+                <div class="nav-links">
+                    <a href="/index.html" class="active">Ana Sayfa</a>
+                    <a href="/pages/charts.html">Grafikler</a>
+                    <a href="/pages/search.html">Arama</a>
+                    <a href="/pages/about.html">Hakkımızda</a>
+                </div>
+            </div>
+            <div class="right-section">
+                <form class="search" id="searchForm">
+                    <i class="ri-search-line"></i>
+                    <input type="text" id="searchInput" placeholder="Bir varlık arayın..." required
+                        autocomplete="off">
+                </form>
+                <i id="theme-toggle" class="ri-sun-line"></i>
+            </div>
+        </nav>
+
+        <div class="coin-container">
+            <div class="left-section">
+                <div class="ticker">
+                    <div class="tradingview-widget-container" id="ticker-widget"></div>
+                </div>
+                <h3>İstatistikler</h3>
+                <div class="coin-info"></div>
+            </div>
+
+            <div class="main-section">
+                <div class="mini-chart">
+                    <div class="tradingview-widget-container" id="mini-chart-widget"></div>
+                </div>
+            </div>
+
+            <div class="right-section"></div>
+
+        </div>
+
+        <div class="coin-desc">
+            <h3>Varlık Hakkında</h3>
+            <p id="coin-desc-p">
+                Bitcoin'in Tanımı ve Doğuşu:
+
+Bitcoin, peer-to-peer (eşler arası) teknolojiye dayalı, merkezi bir otoriteye bağlı olmayan ilk başarılı internet para birimidir.
+
+Bitcoin, Satoshi Nakamoto takma adıyla anonim bir kişi veya grup tarafından yaratılmıştır. Kaynak kodu herkese açık bir açık kaynak projesi olarak yayınlanmıştır, yani herkes kodu inceleyebilir ve gelişime katkıda bulunabilir.
+
+Bitcoin'in Amacı:
+
+Bitcoin, merkezi bir otorite olmadan, güvenli, doğrulanabilir ve değiştirilemez bir şekilde dijital olarak transfer edilebilen bir değişim aracı üretmeyi amaçlamaktadır.
+
+Bitcoin, düşük işlem ücretleri, anonimlik, ve her yerde kullanılabilirlik sağlayan, merkezi otoriteler ve bankalar olmadan çalışan decentralized (merkeziyetsiz) bir peer-to-peer para birimidir.
+
+Bitcoin'in Özellikleri:
+
+Bitcoin'in yalnızca 21 milyon BTC üretilecektir, bu da onu deflasyonist bir para birimi yapmaktadır.
+
+Bitcoin, SHA-256 adlı bir hashing algoritması kullanır ve işlem onay süresi ortalama 10 dakikadır.
+
+Günümüzde ASIC çipleriyle madencilik yapılmaktadır ve hash oranı peta hash seviyelerine çıkmıştır.
+
+Bitcoin'in Etkisi:
+
+Bitcoin, başarılı bir çevrimiçi kripto para birimi olarak, Litecoin, Peercoin, Primecoin gibi alternatif para birimlerine ilham vermiştir.
+
+Diğer Kripto Para Yenilikleri:
+
+Bitcoin’in başarısının ardından, Ethereum’un Turing-complete akıllı sözleşme teknolojisiyle yenilikler ortaya çıkmış, bu da EOS, Tron, ve hatta CryptoKitties gibi projelerin gelişimine yol açmıştır.
+            </p>
+            <div class="error-message" id="coin-info-error">API sınırına ulaşıldı. Lütfen daha sonra tekrar deneyin..</div>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <p>CoinPazar, All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://github.com/emrahc4"><i class="ri-github-line"></i></a>
+            <a href="https://www.linkedin.com/in/emrah-%C3%A7ak%C4%B1r-052b422a1/" target="_blank"><i class="ri-linkedin-line"></i></a>
+        </div>
+    </footer>
+
+    <button onclick="scrollToTop()" id="scrollTop"><i class="ri-arrow-up-s-line"></i></button>
+
+
+    <script src="../assets/js/global.js"></script>
+    <script src="../assets/js/coin.js"></script>
+</body>
+
+</html>

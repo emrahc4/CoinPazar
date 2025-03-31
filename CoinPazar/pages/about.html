@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>CoinPazar</title>
+</head>
+
+<body>
+
+    <div class="overlay">
+        <button id="closeMenu"><i class="ri-close-circle-line"></i></button>
+
+        <div class="nav-links">
+            <a href="/index.html">Ana Sayfa</a>
+            <a href="/pages/charts.html">Grafikler</a>
+            <a href="/pages/search.html">Aramak</a>
+            <a href="/pages/about.html" class="active">Hakkımızda</a>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://github.com/emrahc4"><i class="ri-github-line"></i></a>
+            <a href="https://www.linkedin.com/in/emrah-%C3%A7ak%C4%B1r-052b422a1/" target="_blank"><i class="ri-linkedin-line"></i></a>
+        </div>
+
+    </div>
+
+    <div class="main">
+
+        <div class="global">
+            <p>Coins: <b id="coins-count">N/A</b></p>
+            <p>Değişimler: <b id="exchanges-count">N/A</b></p>
+            <p>Piyasa Değeri: <span><b id="marketCap">N/A</b> <span id="marketCapChange">N/A <i
+                            class="ri-arrow-down-s-fill"></i></span></span></p>
+            <p>24 Saatlik Hacim: <b id="volume">N/A</b></p>
+            <p>Piyasa Hakimiyeti: <b id="dominance">BTC N/A% - ETH N/A%</b></p>
+        </div>
+
+        <nav>
+            <div class="left-section">
+                <button id="openMenu"><i class="ri-menu-line"></i></button>
+                <a href="#" class="logo">CoinPazar</a>
+                <div class="nav-links">
+                    <a href="/index.html">Ana Sayfa</a>
+                    <a href="/pages/charts.html">Grafikler</a>
+                    <a href="/pages/search.html">Arama</a>
+                    <a href="/pages/about.html" class="active">Hakkımızda US</a>
+                </div>
+            </div>
+            <div class="right-section">
+                <form class="search" id="searchForm">
+                    <i class="ri-search-line"></i>
+                    <input type="text" id="searchInput" placeholder="Bir varlık arayın..." required
+                        autocomplete="off">
+                </form>
+                <i id="theme-toggle" class="ri-sun-line"></i>
+            </div>
+        </nav>
+
+        <div class="about-container">
+            <div class="info">
+                <h3>The CoinPazar Story</h3>
+                <p>
+                    Kripto para dünyası hızla gelişirken, CoinPazar olarak vizyonumuz, dijital varlıklarla etkileşimi dönüştürmekti. Yolculuğumuz, herkes için güvenli, şeffaf ve erişilebilir bir platform oluşturma hedefiyle başladı—ister yeni başlayan biri olun, ister deneyimli bir yatırımcı.
+                    <br><br>
+                    Blokzincir teknolojisine olan tutkumuz ve yenilikçi bakış açımız sayesinde, gerçek zamanlı piyasa verileri, hızlı ve güvenli işlemler ile kullanıcı dostu bir deneyim sunmayı amaçladık. Bugün, CoinPazar, yatırımcıları, tüccarları ve kripto meraklılarını bir araya getiren güvenilir bir ekosistem haline geldi.
+
+Büyümeye devam ederken misyonumuz net: Dijital finansın geleceğini şekillendirmek ve kripto para dünyasını herkes için daha basit, daha akıllı ve daha güvenli hale getirmek. CoinPazar'ına hoş geldiniz—gelecek burada başlıyor! 🚀
+                </p>
+        
+            </div>
+            <div class="image">
+                <img src="/../assets/images/about.jpg" alt="about">
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <p>CoinPazar, All Rights Reserved. Emrah Çakır</p>
+        <div class="social-icons">
+            <a href="https://github.com/emrahc4"><i class="ri-github-line"></i></a>
+            <a href="https://www.linkedin.com/in/emrah-%C3%A7ak%C4%B1r-052b422a1/" target="_blank"><i class="ri-linkedin-line"></i></a>
+        </div>
+    </footer>
+
+    <button onclick="scrollToTop()" id="scrollTop"><i class="ri-arrow-up-s-line"></i></button>
+
+
+    <script src="../assets/js/global.js"></script>
+</body>
+
+</html>
