@@ -1,4 +1,6 @@
 🌟 CoinPazarı 🌟
+
+
 CoinPazarı 💰, kullanıcıların kripto para birimleri hakkında en güncel verilere erişmesini sağlayan dinamik bir web uygulamasıdır. CoinGecko API'si üzerinden veri çekerek, global piyasa verilerinden popüler coin'lere kadar çeşitli bilgileri sunar. Ayrıca, kullanıcılar uygulamanın temasını (açık veya koyu) değiştirebilir ve piyasa trendlerini takip edebilirler.
 
 🚀 Özellikler
